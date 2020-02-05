@@ -1,6 +1,6 @@
-### WC Download Products from AWS S3 
+# WC Download Products from AWS S3 
 
-#Allows using Amazon S3 to upload and download Woocommerce digital products.
+### Allows using Amazon S3 to upload and download Woocommerce digital products.
 
 ## Description 
 
@@ -17,7 +17,7 @@ WC Download Products from AWS S3  extension also supports multiple buckets withi
 
 ## Frequently Asked Questions 
 
-# How to configure Amazon AWS S3 settings? 
+### How to configure Amazon AWS S3 settings? 
 
 1. Go to aws.amazon.com and sign for an account there
 2. Go to console.aws.amazon.com. Select “Your Name” at the top right corner and then My Security Credentials.
@@ -36,6 +36,6 @@ WC Download Products from AWS S3  extension also supports multiple buckets withi
 
 ## Changelog 
 
-# 1.0.0
+### 1.0.0
 Initial release
 
