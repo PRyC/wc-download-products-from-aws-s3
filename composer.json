@@ -1,0 +1,10 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.112"
+    },
+    "autoload": {
+        "psr-4": {
+            "Woocommerce\\Extension\\Amazon\\": "src/Woocommerce/Extension/Amazon"
+        }
+    }
+}
