@@ -2,6 +2,7 @@
 
 ### Allows using Amazon S3 to upload and download Woocommerce digital products.
 
+
 ## Description 
 
 The WCDownload Products from AWS S3  plugin will allow you to store your products through your Amazon AWS S3 service. You can explore buckets and upload files directly to Amazon AWS S3. When a customer downloads their purchase the extension will translate this into Amazon AWS S3 URL and serve that file as a download.
@@ -10,10 +11,12 @@ Using WC Download Products from AWS S3 plugin to serve your digital products off
 
 WC Download Products from AWS S3  extension also supports multiple buckets within one product so you can easily provide download access to files stored on different Amazon buckets when purchasing one product.
 
+
 ## Installation 
 
 1. Unzip "wc-download-products-from-aws-s3.zip" and copy folder "wc-download-products-from-aws-s3" into your wordpress plugins folder, normally located in /wp-content/plugins/. 
 2. Activate the plugin through the 'Plugins' menu in Wordpress
+
 
 ## Frequently Asked Questions 
 
@@ -30,6 +33,6 @@ WC Download Products from AWS S3  extension also supports multiple buckets withi
 
 ## Changelog 
 
-#### 1.0.0
+#### 1.0.0 
 Initial release
 
