@@ -27,12 +27,6 @@ WC Download Products from AWS S3  extension also supports multiple buckets withi
 6. Paste the  Access Key ID and  Secret Access Key into the fields.
 7. Select your Amazon Endpoint where your files will be stored.
 
-## Screenshots 
-
-1. Settings page
-2. List of Amazon AWS S3 Buckets
-3. List of files in Amazon AWS S3 Bucket
-4. Upload to Amazon AWS S3 window
 
 ## Changelog 
 
