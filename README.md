@@ -36,6 +36,6 @@ WC Download Products from AWS S3  extension also supports multiple buckets withi
 
 ## Changelog 
 
-### 1.0.0
+#### 1.0.0
 Initial release
 
