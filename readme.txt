@@ -2,7 +2,7 @@
 Contributors: Piotr Włoch
 Tags: woocommerce, amazon s3, s3, aws, aws s3, AWS S3, amazon aws s3, download, downloadable-product, downloadable product, downloadable productst, storage, digital products,
 Requires at least: 4.9
-Tested up to: 5.3.2
+Tested up to: 5.4
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GPLv3 or later

@@ -11,6 +11,9 @@
   Domain Path: /languages/
   License: GPLv3 or later
   License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ * 
+ * WC requires at least: 3.6.0
+ * WC tested up to: 4.0.1
  */
 
 /*
