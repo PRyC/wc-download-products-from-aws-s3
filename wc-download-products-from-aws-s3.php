@@ -31,16 +31,16 @@
   along with WC Download Products from AWS S3 Plugin. If not, see http://www.gnu.org/licenses/gpl-3.0.html.
  */
 
-if ( !defined( 'WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_VERSION' ) ) {
-	define( 'WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_VERSION', '1.0.0' );
+if (!defined('WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_VERSION')) {
+  define('WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_VERSION', '1.0.0');
 }
 
-if ( !defined( 'WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_DIR' ) ) {
-	define( 'WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_DIR', dirname( __FILE__ ) );
+if (!defined('WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_DIR')) {
+  define('WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_DIR', dirname(__FILE__));
 }
 
-if ( !defined( 'WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_URL' ) ) {
-	define( 'WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_URL', plugins_url( '', __FILE__ ) );
+if (!defined('WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_URL')) {
+  define('WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_URL', plugins_url('', __FILE__));
 }
 
 /**
@@ -48,13 +48,14 @@ if ( !defined( 'WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_URL' ) ) {
  *
  * @return void
  */
-function woocommerce_aws_s3_download_products_init() {
-	$dir = trailingslashit( WP_LANG_DIR );
-	load_textdomain( 'wc-download-products-from-aws-s3', $dir . '/wc-download-products-from-aws-s3-' . get_locale() . '.mo' );
-	load_plugin_textdomain( 'wc-download-products-from-aws-s3', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
-	
-	require_once WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_DIR . '/src/Woocommerce/Extension/Amazon/AmazonS3Controler.php';
-	$woocommerce_download_products_from_aws_s3 = Woocommerce\Extension\Amazon\AmazonS3Controler::getInstance();
+function woocommerce_aws_s3_download_products_init()
+{
+  $dir = trailingslashit(WP_LANG_DIR);
+  load_textdomain('wc-download-products-from-aws-s3', $dir . '/wc-download-products-from-aws-s3-' . get_locale() . '.mo');
+  load_plugin_textdomain('wc-download-products-from-aws-s3', false, plugin_basename(dirname(__FILE__)) . '/languages');
+
+  require_once WOOCOMMERCE_DOWNLOAD_PRODUCTS_FROM_AWS_S3_DIR . '/src/Woocommerce/Extension/Amazon/AmazonS3Controler.php';
+  $woocommerce_download_products_from_aws_s3 = Woocommerce\Extension\Amazon\AmazonS3Controler::getInstance();
 }
 
-add_action( 'plugins_loaded', 'woocommerce_aws_s3_download_products_init' );
+add_action('plugins_loaded', 'woocommerce_aws_s3_download_products_init');

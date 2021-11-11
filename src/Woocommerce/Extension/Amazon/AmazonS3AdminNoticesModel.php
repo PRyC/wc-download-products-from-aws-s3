@@ -7,41 +7,44 @@ namespace Woocommerce\Extension\Amazon;
  *
  * @author Piotr Włoch
  */
-class AmazonS3AdminNoticesModel {
+class AmazonS3AdminNoticesModel
+{
 
-	/**
-	 * Update Notices.
-	 *
-	 * @param array $notices
-	 *
-	 * @return void
-	 */
-	public static function updateNotices( $notices ) {
-		update_option( 'woocommerce_amazon_s3_all_notices', $notices );
-	}
+  /**
+   * Update Notices.
+   *
+   * @param array $notices
+   *
+   * @return void
+   */
+  public static function updateNotices($notices)
+  {
+    update_option('woocommerce_amazon_s3_all_notices', $notices);
+  }
 
-	/**
-	 * Add Notice.
-	 *
-	 * @param string $message
-	 *
-	 * @return void
-	 */
-	public static function addNotice( $message ) {
-		$allNotices = get_option( 'woocommerce_amazon_s3_all_notices', array() );
-		$allNotices[] = trim( $message );
-		update_option( 'woocommerce_amazon_s3_all_notices', $allNotices );
+  /**
+   * Add Notice.
+   *
+   * @param string $message
+   *
+   * @return void
+   */
+  public static function addNotice($message)
+  {
+    $allNotices = get_option('woocommerce_amazon_s3_all_notices', array());
+    $allNotices[] = trim($message);
+    update_option('woocommerce_amazon_s3_all_notices', $allNotices);
 
-		return;
-	}
+    return;
+  }
 
-	/**
-	 * Return Notices.
-	 *
-	 * @return array
-	 */
-	public static function getNotices() {
-		return get_option( 'woocommerce_amazon_s3_all_notices', array() );
-	}
-
+  /**
+   * Return Notices.
+   *
+   * @return array
+   */
+  public static function getNotices()
+  {
+    return get_option('woocommerce_amazon_s3_all_notices', array());
+  }
 }
