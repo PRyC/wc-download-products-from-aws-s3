@@ -10,7 +10,7 @@ jQuery(function ($) {
         var $el = $(this);
 
         window.file_path_field = $el.closest('tr').find('td.file_url input');
-        window.file_name_field = $el.closest('tr').find('td.file_name input');
+        //window.file_name_field = $el.closest('tr').find('td.file_name input');
 
 
         // If the media frame already exists, reopen it.
@@ -61,7 +61,7 @@ jQuery(function ($) {
 
         woo_amazons3_downloadable_file_frame.on('select', function () {
             var file_path = '';
-            var file_name = '';
+            //var file_name = '';
             var selection = woo_amazons3_downloadable_file_frame.state().get('selection');
 
             selection.map(function (attachment) {
@@ -69,19 +69,19 @@ jQuery(function ($) {
                 if (attachment.url) {
                     file_path = attachment.url;
                 }
-                if (attachment.name) {
-                    file_name = attachment.name;
-                }
+                //if (attachment.name) {
+                    //file_name = attachment.name;
+                //}
             });
 
             window.file_path_field.val(file_path);
-            window.file_name_field.val(file_name);
+            //window.file_name_field.val(file_name);
         });
 
         // When an image is selected, run a callback.
         woo_amazons3_downloadable_file_frame.on('insert', function () {
             var file_path = '';
-            var file_name = '';
+            //var file_name = '';
             var selection = woo_amazons3_downloadable_file_frame.state().get('selection');
 
             selection.map(function (attachment) {
@@ -89,13 +89,13 @@ jQuery(function ($) {
                 if (attachment.url) {
                     file_path = attachment.url;
                 }
-                if (attachment.name) {
-                    file_name = attachment.name;
-                }
+                //if (attachment.name) {
+                  //  file_name = attachment.name;
+                //}
             });
 
             window.file_path_field.val(file_path);
-            window.file_name_field.val(file_name);
+            //window.file_name_field.val(file_name);
         });
 
         woo_amazons3_downloadable_file_frame.on('close', function () {
